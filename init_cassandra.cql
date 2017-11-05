@@ -1,6 +1,6 @@
-CREATE KEYSPACE CryptocurrencyMarketData WITH replication = {'class': 'SimpleStrategy', 'replication_factor' : 1};
+CREATE KEYSPACE crypto_currency_market_data WITH replication = {'class': 'SimpleStrategy', 'replication_factor' : 1};
 
-CREATE TABLE CryptocurrencyMarketData.sent_received(
+CREATE TABLE crypto_currency_market_data.sent_received(
  exchange TEXT,
  cryptocurrency TEXT,
  basecurrency TEXT,
