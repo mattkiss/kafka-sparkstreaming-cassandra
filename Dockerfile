@@ -47,6 +47,9 @@ RUN conda install jupyter -y
 #Install Kafka Python module
 RUN pip install kafka-python
 
+#Install Satori Python module
+pip install satori-rtm-sdk
+
 USER root
 
 #Install Cassandra
