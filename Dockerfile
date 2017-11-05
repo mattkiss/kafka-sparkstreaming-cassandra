@@ -48,7 +48,7 @@ RUN conda install jupyter -y
 RUN pip install kafka-python
 
 #Install Satori Python module
-pip install satori-rtm-sdk
+RUN pip install satori-rtm-sdk
 
 USER root
 
