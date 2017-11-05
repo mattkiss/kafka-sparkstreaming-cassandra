@@ -1,8 +1,18 @@
-CREATE KEYSPACE test_time WITH replication = {'class': 'SimpleStrategy', 'replication_factor' : 1};
+CREATE KEYSPACE CryptocurrencyMarketData WITH replication = {'class': 'SimpleStrategy', 'replication_factor' : 1};
 
-CREATE TABLE test_time.sent_received(
- time_sent TEXT,
- time_received TEXT,
-PRIMARY KEY (time_sent)
+CREATE TABLE CryptocurrencyMarketData.sent_received(
+ exchange TEXT,
+ cryptocurrency TEXT,
+ basecurrency TEXT,
+ type TEXT,
+ price TEXT,
+ size TEXT,
+ bid TEXT,
+ ask TEXT,
+ open TEXT,
+ high TEXT,
+ low TEXT,
+ volume TEXT,
+ timestamp TEXT,
+PRIMARY KEY (timestamp)
 );
-
